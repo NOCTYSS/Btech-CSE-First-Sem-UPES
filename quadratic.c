@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 int a,b,c;
 int main(){
     printf("Enter coefficients a, b and c: ");
