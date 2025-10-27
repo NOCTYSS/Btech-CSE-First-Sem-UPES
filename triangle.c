@@ -3,7 +3,9 @@
 int main() {
     int s1, s2, s3;
     printf("Enter the lengths of the three sides of the triangle: ");
-    if (scanf("%d %d %d", &s1, &s2, &s3) != 3 || s1 <= 0 || s2 <= 0 || s3 <= 0) {
+    scanf("%d %d %d", &s1, &s2, &s3);
+    if(s1 != 3 ||s2 != 3 ||s3 != 3 || s1 <= 0 || s2 <= 0 || s3 <= 0)
+    {
         printf("Invalid input. Please enter positive integers.\n");
         return 1;
     }

@@ -11,7 +11,6 @@ int main()
     for (i = 2; i <= n; i++) 
     {
         isPrime = 1; // assume i is prime
-        
         for (j = 2; j <= sqrt(i); j++)
          {
             if (i % j == 0) 

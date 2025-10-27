@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     char str[100];
     int spaces = 0, digits = 0, specials = 0;
 
@@ -8,7 +9,8 @@ int main() {
     fgets(str, sizeof(str), stdin);
 
     int i = 0;
-    while (str[i] != '\0' && str[i] != '\n') {
+    while (str[i] != '\0' && str[i] != '\n') 
+    {
         if (str[i] == ' ')
             spaces++;
         else if (str[i] >= '0' && str[i] <= '9')

@@ -1,10 +1,12 @@
 //Calculating the factorial of a number
 #include <stdio.h>
-int n, fact;
+int n;
+long int fact;
 int main()
 {
     printf("Enter a positive integer: ");
-    if(scanf("%d", &n) != 1 || n < 0) 
+    scanf("%d", &n);
+    if(n < 0) 
     {
         printf("Invalid input. Please enter a non-negative integer.\n");
         return 1;

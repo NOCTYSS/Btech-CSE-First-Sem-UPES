@@ -34,7 +34,7 @@ int main()
     { 
         for (int j = i + 1; j < n; j++) 
         {
-            if (diag[i] != diag[j]) 
+            if (diag[i] == diag[j]) 
             {
                 distinct = 0;
                 break;

@@ -40,7 +40,7 @@ int main()
     
     //printing the merged array.
 
-    printf("Merged array is :\n");
+    printf("\nMerged array is :\n");
    
     for (int i = 0; i < s1 + s2; i++)
     {
@@ -49,4 +49,4 @@ int main()
     printf("\n");
 
     return 0;
-}
+} 

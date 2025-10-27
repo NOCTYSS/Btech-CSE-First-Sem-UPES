@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     char str[100], ch;
     int freq = 0;
 
@@ -11,7 +12,8 @@ int main() {
     scanf("%c", &ch);
 
     int i = 0;
-    while (str[i] != '\0' && str[i] != '\n') {
+    while (str[i] != '\0' && str[i] != '\n') 
+    {
         if (str[i] == ch)
             freq++;
         i++;

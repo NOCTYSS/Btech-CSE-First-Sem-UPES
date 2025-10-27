@@ -27,20 +27,10 @@ int binarySearch(int a[], int n, int num)
 
 int main() 
 {
-    int size=0;
-    printf("Enter size of the array: ");
-    scanf("%d", &size);
-    int a[size];
-    printf("Enter %d elements in sorted order:\n", size);
-    for (int i = 0; i < size; i++) 
-    {
-        scanf("%d", &a[i]);
-    }
-    int num = 0;
-    printf("Enter element to be searched: ");
-    scanf("%d", &num);
-
-    int result = binarySearch(a, size, num);
+    int a[] = {2, 4, 6, 8, 10, 12, 14};
+    int n = sizeof(a) / sizeof(a[0]);
+    int num = 10;
+    int result = binarySearch(a, n, num);
 
     if (result != 1)
         printf("Element %d found at index %d\n", num, result);

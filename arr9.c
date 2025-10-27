@@ -29,16 +29,17 @@ int main()
         num /= 10;
     }
 
-    int max_digit = 0;
-    int max_count = count[0];
-    for (int i = 1; i < 10; i++) {
-        if (count[i] > max_count) 
+    int high_digit = 0;
+    int high_count = count[0];
+    for (int i = 1; i < 10; i++) 
+    {
+        if (count[i] > high_count) 
         {
-            max_count = count[i];
-            max_digit = i;
+            high_count = count[i];
+            high_digit = i;
         }
     }
 
-    printf("Most frequent digit: %d (occurs %d times)\n", max_digit, max_count);
+    printf("Most frequent digit: %d (occurs %d times)\n", high_digit, high_count);
     return 0;
 }

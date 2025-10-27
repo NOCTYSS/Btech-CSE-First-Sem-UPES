@@ -1,26 +1,29 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int main() {
+int main() 
+{
     char str[100];
-    int vowels = 0, consonants = 0;
+    int vow= 0, cons = 0;
 
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
 
     int i = 0;
-    while (str[i] != '\0' && str[i] != '\n') {
+    while (str[i] != '\0' && str[i] != '\n') 
+    {
         char ch = tolower(str[i]);
-        if (isalpha(ch)) {
+        if (isalpha(ch)) 
+        {
             if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
-                vowels++;
+                vow++;
             else
-                consonants++;
+                cons++;
         }
         i++;
     }
 
-    printf("Vowels: %d\n", vowels);
-    printf("Consonants: %d\n", consonants);
+    printf("Vowels: %d\n", vow);
+    printf("Consonants: %d\n", cons);
     return 0;
 }

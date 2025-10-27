@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     char str[100];
     int count = 0;
 
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
-
-    // Count characters until null terminator or newline
-    while (str[count] != '\0' && str[count] != '\n') {
+    while (str[count] != '\0' && str[count] != '\n') 
+    {
         count++;
     }
 
